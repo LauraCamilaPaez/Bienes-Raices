@@ -36,7 +36,7 @@
     <main class="contenedor seccion contenido-centrado">
         <h2 class="fw-300 centrar-texto">Llena el formulario de Contacto</h2>
 
-        <form action="">
+        <form class="contacto" action="">
                 <!-- fieldset agrupa campos que estan relacionados -->
             <fieldset>
                 <!-- legend para decirle al usuario de que trata el formulario -->
@@ -74,13 +74,14 @@
                 <legend>Contacto</legend>
 
                 <p>¿Cómo deseas que te contactemos?</p>
-
-                <label for="phone">Teléfono</label>
-                <input type="radio" name="contacto" value="phone" id="phone">
-            
-                <label for="phone">Email</label>
-                <input type="radio" name="contacto" value="email" id="email">
-
+                
+                <div class="forma-contacto">
+                    <label for="phone">Teléfono</label>
+                    <input type="radio" name="contacto" value="phone" id="phone">
+                
+                    <label for="email">Email</label>
+                    <input type="radio" name="email" value="email" id="email">
+                </div>
                 <p>Sí eligió Teléfono, elija la fecha y la hora de disponibilidad</p>
 
                 <label for="fecha">Fecha: </label>

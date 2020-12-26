@@ -50,6 +50,11 @@ h4 {
     padding: 1rem 3rem;
     display: inline-block;
     text-align: center;
+    border: none;
+    margin-bottom: 2rem;
+}
+.boton:hover{
+    cursor: pointer;
 }
 .boton-amarillo {
     background-color: #E08709;
@@ -297,6 +302,55 @@ h4 {
 
 /* contacto */
 
+.contacto p{
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0;
+}
+
+legend{
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+
 label {
+    text-transform: uppercase;
+    font-weight: 700;
     display: block;
+}
+
+/* selector por atributo */
+/* not: para seleccionar un elemento en especifico al que no se le van a aplicar los estilos */
+
+input:not([type="submit"]), 
+textarea,
+select{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+
+select {
+    /* en algunos casos es necesario un prefijo */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    height: 20rem;
+}
+
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
